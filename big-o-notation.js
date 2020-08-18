@@ -5,14 +5,22 @@ with 15 people. You want to find a playmate for your dog, preferably of the
 same breed. So you want to know if anyone out of the 15 people have the same 
 breed as your dog. You stand up and yell out, who here has a golden retriever 
 and would like to be a playdate for my golden. Someone yells - "I do, be happy 
-to bring him over"
+to bring him over" */
 
-Determine the Big O for the following algorithm: You are sitting in a room with
+Constant Time - O(1)
+
+***************************************************************************************
+
+/* Determine the Big O for the following algorithm: You are sitting in a room with
 15 people. You want to find a playmate for your dog who is of the same breed. So 
 you want to know if anyone out of the 15 people have the same breed as your dog. 
 You start with the first person and ask him if he has a golden retriever. He says 
 no, then you ask the next person, and the next, and the next until you find someone 
 who has a golden or there is no one else to ask. */
+
+Linear Time - O(n)
+
+***************************************************************************************
 
 /* 2. Even or odd
 What is the Big O of the following algorithm? Explain your answer */
@@ -25,6 +33,10 @@ function isEven(value) {
     return false;
   }
 }
+
+// Constant Time - O(1) - this function only requires true or false as inputs
+
+***************************************************************************************
 
 /* 3. Are you here?
 What is the Big O of the following algorithm? Explain your answer */
@@ -40,6 +52,10 @@ function areYouHere(arr1, arr2) {
   return false;
 }
 
+// Polynomial Time - O(n^k) - runtime is exponential because of nested loops
+
+***************************************************************************************
+
 /* 4. Doubler
 What is the Big O of the following algorithm? Explain your answer */
 
@@ -49,6 +65,11 @@ function doubleArrayValues(array) {
   }
   return array;
 }
+
+// Linear Time O(n) - this function only requires a sinlge input and runtime only depends
+// on the length of the single array as input
+
+***************************************************************************************
 
 /* 5. Naive search
 What is the Big O of the following algorithm? Explain your answer */
@@ -61,6 +82,11 @@ function naiveSearch(array, item) {
   }
 }
 
+// Linear Time O(n) - this function only requires a sinlge input and runtime only depends
+// on the length of the single array as input
+
+***************************************************************************************
+
 /* 6. Creating pairs:
 What is the Big O of the following algorithm? Explain your answer */
 
@@ -71,6 +97,11 @@ function createPairs(arr) {
     }
   }
 }
+
+// Polynomial Time - O(n^2) - this function uses a nested for-loop, thus the number of actions
+// increases exponentially
+
+***************************************************************************************
 
 /* 7. Compute the sequence
 What does the following algorithm do? What is its runtime complexity?
@@ -92,6 +123,10 @@ function compute(num) {
   }
   return result;
 }
+
+// Linear Time - O(n) - this function performs the 'fibonnacci sequence'
+
+***************************************************************************************
 
 /* 8. An efficient search
 In this example, we return to the problem of searching using a more sophisticated 
@@ -121,12 +156,21 @@ function efficientSearch(array, item) {
   return -1;
 }
 
+/* Logarithmic Time - O(log n) - each iteration reduces the number of actions given
+the while loop */
+
+***************************************************************************************
+
 /* 9. Random element
 What is the Big O of the following algorithm? Explain your answer */
 
 function findRandomElement(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
+
+// Constant Time - O(1) - the size of the input does not change the number of actions
+
+***************************************************************************************
 
 /* 10. What Am I?
 What does the following algorithm do? What is the Big O of the following algorithm? 
@@ -141,6 +185,11 @@ function isWhat(n) {
   }
   return true;
 }
+
+// Linear Time - O(n) - this function determines if n is a 'prime number', time to process
+// depends upon input size because of for-loop
+
+***************************************************************************************
 
 /* 11. Tower of Hanoi
 The Tower of Hanoi is a very famous mathematical puzzle (some call it game!). 
@@ -169,14 +218,18 @@ a smaller disk. */
 
 // What is the runtime of your algorithm?
 
+***************************************************************************************
+
 /* 12. Iterative version
 Solve the drills 1 - 7 from your previous checkpoint (Recursion) iteratively. */
 
+***************************************************************************************
 
 /* 13. Recursive Big O
 Take your solutions from the recursive exercises that you completed in the previous 
 checkpoint and identify the time complexities (big O) of each of them. */
 
+***************************************************************************************
 
 /* 14. Iterative Big O
 Take your solutions from the iterative exercises today and identify the time complexities
