@@ -66,7 +66,7 @@ function doubleArrayValues(array) {
   return array;
 }
 
-// Linear Time O(n) - this function only requires a sinlge input and runtime only depends
+// Linear Time O(n) - this function only requires a single input and runtime only depends
 // on the length of the single array as input
 
 ***************************************************************************************
